@@ -1,0 +1,119 @@
+<div id="family-month">
+<style>
+#family-month{font:14px/1.55 'Microsoft JhengHei',sans-serif;color:#444;background:#fdfdfc;color-scheme:light;padding:20px 0;border-radius:8px}#family-month *{box-sizing:border-box}#family-month h2{color:#1a4d3a;text-align:center;font-size:23px;margin:0 12px 16px}#family-month button,#family-month input,#family-month select{font:inherit}#family-month button{cursor:pointer;border:0;border-radius:20px;padding:10px 18px;background:#e2ece9;color:#1a4d3a;min-height:42px}#family-month button.today{background:#d35400;color:white}#family-month button.on{background:#1a4d3a;color:white}#family-month .tools{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:10px;margin:0 12px 18px}#family-month .buses{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0 22px 22px}#family-month .bus{padding:16px;border:1px solid #eaeaea;border-radius:9px;background:#fff}#family-month .bus strong{display:block;color:#286657;border-bottom:1px solid #e2ece9;padding-bottom:8px;margin-bottom:10px}#family-month .bus a{display:block;text-align:center;background:#2b7e5d;color:white;border-radius:6px;text-decoration:none;padding:9px;margin-top:14px}#family-month .scroll{overflow-x:auto}#family-month table{width:100%;border-collapse:collapse;table-layout:fixed;min-width:900px}#family-month th,#family-month td{border:1px solid #ededed;vertical-align:top;padding:9px;overflow-wrap:anywhere}#family-month thead th{background:#eaf1eb;color:#286657;font-weight:600;text-align:center;padding:13px 4px;border-top:1px solid #1a4d3a;border-bottom:1px solid #1a4d3a}#family-month th.who{width:66px;background:#f1f6f2;color:#1a4d3a;text-align:center;vertical-align:middle;font-size:13px;padding:7px}#family-month .dates td{color:#1a4d3a;font-size:17px;padding:9px 9px 4px;border-bottom:0;border-top:2px solid #cfdfd5}#family-month .dates th{border-top:2px solid #cfdfd5}#family-month .upper td{border-top:0;border-bottom:1px dashed #ccd8d0}#family-month .lower td{border-top:1px dashed #ccd8d0}#family-month .uniform{color:#6e7d72;font-size:11px;margin-bottom:6px}#family-month .tag-header{margin:6px 0 2px!important}#family-month .tag-pill{display:inline-block;padding:1px 8px;border-radius:14px;font-size:12px;line-height:1.6}#family-month .pill-language-art{background:#fff0e5;color:#e45b00}#family-month .pill-steam{background:#e5f3ff;color:#008ce2}#family-month .pill-brother{background:#def2f2;color:#078d96}#family-month .pill-school,#family-month .pill-exam{background:#ffe9e9;color:#ef4652}#family-month .pill-speech{background:#e7f4ed;color:#28765b}#family-month .sub-title{font-size:11px}#family-month ul{padding-left:16px;margin:3px 0 8px}#family-month li{margin:3px 0}#family-month p{margin:3px 0 8px}#family-month .checklist{padding:0;list-style:none}#family-month label{display:flex;gap:5px;align-items:flex-start;cursor:pointer}#family-month input[type=checkbox]{accent-color:#28765b;flex-shrink:0;margin:4px 0;width:15px;height:15px}#family-month .done span{text-decoration:line-through;color:#8d9690}#family-month .selected{background:#f5faf4}#family-month .details{margin:0 22px 20px;padding:16px;border:1px solid #cdded1;background:#fff;border-radius:10px}#family-month .details table{min-width:0}#family-month .details h3{margin:0 0 12px;color:#1a4d3a}#family-month footer{display:flex;gap:8px;flex-wrap:wrap;padding:18px 22px 0}#family-month footer input,#family-month footer select{border:1px solid #d5e0d7;padding:8px;border-radius:7px;min-width:0;background:white;color:#444}#family-month footer input[type=text]{flex:1;min-width:150px}#family-month .note{font-size:12px;color:#718075;padding:10px 22px 0}#family-month [hidden]{display:none!important}@media(max-width:600px){#family-month .buses{grid-template-columns:1fr;margin:0 12px 16px}#family-month .details{margin:0 12px 16px}}
+#family-month table{font-size:12px}#family-month .tag-pill{font-size:11px}#family-month .dates td{font-size:15px}#family-month .dates td .tag-header,#family-month .dates td p{font-size:12px}#family-month th.who{font-size:12px}
+</style>
+<h2>2026 年 9 月 家庭作業與活動月曆</h2>
+<div class="tools"><button class="today" data-act="today">📅 只看今天</button><button data-act="check" aria-pressed="false">☑ 待辦清單</button><span id="month-progress" aria-live="polite"></span></div>
+<div class="buses"><section class="bus"><strong>🌅 今日上學接送</strong>⏰ 時間：07:21<br>📍 地點：榮富公園, 1610<br>🚌 車號：20-2號車<br>☎ 聯絡：賴老師 (0933-875072)<a href="https://notification.theomnieyes.com/location/map/PAA-123-20" target="_blank" rel="noopener">📍 查看上學校車動態</a></section><section class="bus"><strong>🏫 今日放學接送（安親班）</strong>⏰ 時間：18:12<br>📍 地點：7-11 商城門市, 2386<br>🚌 車號：51-2號車<br>☎ 聯絡：曾老師 (0960-775249)<a href="https://notification.theomnieyes.com/location/map/WEGO-051" target="_blank" rel="noopener">📍 查看放學校車動態</a></section></div>
+<section class="details" hidden><h3>9 月 10 日（四）</h3><div id="month-detail"></div></section><div class="scroll"><table aria-label="兄弟共用九月行事曆"><colgroup><col style="width:66px"><col span="5"><col style="width:8%"><col style="width:8%"></colgroup><thead><tr><th>2026 / 9</th><th>週一</th><th>週二</th><th>週三</th><th>週四</th><th>週五</th><th>週六</th><th>週日</th></tr></thead><tbody id="month-body"></tbody></table></div>
+<footer><input type="date" value="2026-09-10" aria-label="待辦日期"><select aria-label="待辦對象"><option value="grade1">弟弟</option><option value="grade2">哥哥</option></select><input type="text" aria-label="待辦內容" placeholder="新增待辦，例如：帶文化課袋" maxlength="120"><button data-act="add">＋新增待辦</button></footer><div class="note">互動預覽 · 勾選僅保留於本次預覽</div>
+<script>
+(()=>{const root=document.getElementById('family-month'),q=s=>root.querySelector(s);
+const database = {
+        "2026-08-31": {
+            grade1: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Preview unit 1.</li></ul><div class="tag-header" style="margin-top:4px;"><span class="tag-pill pill-brother">弟弟聯絡本</span></div><ul><li>國語課本/注音簿包書套(補至P18)</li><li>LA看雲端複習，明天帶文化課袋</li><li>發下帳號密碼、日課表等</li></ul>',
+            grade2: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>TB 2-3 / Video Worksheet</li></ul><div class="tag-header" style="margin-top:4px;"><span class="tag-pill pill-brother">哥哥聯絡本</span></div><ul><li>預習國語第一課(完成預習單)</li><li>複習暑假經典：大學、千字文(二)</li></ul>'
+        },
+        "2026-09-01": {
+            grade1: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Review p. 2-3 and preview vocabulary p. 4, 7.</li></ul><div class="tag-header" style="margin-top:4px;"><span class="tag-pill pill-brother">弟弟聯絡本</span></div><ul><li>讀課文三遍 (國文 P1-3)</li></ul>',
+            grade2: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>TB 4-5 / Describe 2 jobs not mentioned.</li></ul><div class="tag-header" style="margin-top:4px;"><span class="tag-pill pill-brother">哥哥聯絡本</span></div><ul><li>預習國語第一課與完成預習單等</li></ul>'
+        },
+        "2026-09-02": {
+            shared: '<div class="tag-header"><span class="tag-pill pill-school">全校</span></div><p>課後學藝營及多元分組課程開始上課</p>',
+            grade1: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Review p. 4-5, read and spell the words out loud.</li></ul><div class="tag-header" style="margin-top:4px;"><span class="tag-pill pill-brother">弟弟聯絡本</span></div><ul><li>複習「注音習寫簿」第一課</li></ul><div class="tag-header" style="margin-top:4px;"><span class="tag-pill pill-exam">考試提醒</span></div><p>星期五考國語第一課</p>',
+            grade2: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>TB 6-7 Memorize keywords and use in a sentence.</li></ul><div class="tag-header" style="margin-top:4px;"><span class="tag-pill pill-brother">哥哥聯絡本</span></div><ul><li>複習粉紅色注音①號本和註音寫碼寫完</li></ul>'
+        },
+        "2026-09-03": {
+            grade1: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Read the vocabulary sentences on p. 6-7 out loud.</li></ul><div class="tag-header" style="margin-top:4px;"><span class="tag-pill pill-steam">STEAM</span><span class="sub-title">Unit1. Lesson 1</span></div><ul><li>Read tutorial and try online platform</li></ul><div class="tag-header" style="margin-top:4px;"><span class="tag-pill pill-brother">弟弟聯絡本</span></div><ul><li>複習粉紅色注音①號本第一課</li></ul><div class="tag-header" style="margin-top:4px;"><span class="tag-pill pill-exam">考試提醒</span></div><p>明天(星期五)考國語第一課</p>',
+            grade2: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>TB 8-9 / Preview and predict worksheet</li></ul>'
+        },
+        "2026-09-04": {
+            grade1: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Read the phonics on p. 8-9.</li><li>Scholastic reading.</li></ul><div class="tag-header" style="margin-top:4px;"><span class="tag-pill pill-exam">考試提醒</span></div><p>今日考試：國語第一課</p>',
+            grade2: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>TB 10-11 / Make words with scr and str</li></ul>'
+        },
+        "2026-09-07": {
+            grade1: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Read p. 10-23 out loud, study the vocabulary.</li></ul>',
+            grade2: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>No class</li></ul><div class="tag-header" style="margin-top:4px;"><span class="tag-pill pill-brother">哥哥聯絡本</span></div><ul><li><strong>【田園教學活動通知單】</strong>竹子湖</li></ul>'
+        },
+        "2026-09-08": {
+            grade1: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Review p. 10-25, and read out loud.</li></ul>',
+            grade2: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>TB 12-25 / Grandparents activity</li></ul><div class="tag-header" style="margin-top:4px;"><span class="tag-pill pill-steam">STEAM</span></div><ul><li>U1 Lesson 2: Compare Design Solutions</li></ul>'
+        },
+        "2026-09-09": {
+            grade1: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Review p. 26 grammar.</li><li>Review vocabulary p. 5, 7.</li></ul>',
+            grade2: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>TB 26-27 / Neighborhood activities</li></ul>'
+        },
+        "2026-09-10": {
+            grade1: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Review p. 27-32 and read out loud.</li><li>Vocabulary Quiz (p. 5, 7) tomorrow.</li></ul><div class="tag-header" style="margin-top:4px;"><span class="tag-pill pill-steam">STEAM</span></div><ul><li>How Do Engineers Use Technology?</li></ul>',
+            grade2: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>TB 28-31 / World jobs</li></ul>'
+        },
+        "2026-09-11": {
+            grade1: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Review p. 33 grammar on plural nouns.</li><li>Reading worksheet.</li><li>Scholastic Reading.</li></ul>',
+            grade2: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>TB 32-33 / Spelling quiz prep</li></ul>'
+        },
+        "2026-09-14": {
+            grade1: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Review p. 34-35.</li><li>Sign vocabulary 1.1 quiz.</li></ul>',
+            grade2: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Plural nouns worksheet</li></ul>'
+        },
+        "2026-09-15": {
+            grade1: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>No homework</li></ul>',
+            grade2: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>TB 34-35</li></ul><div class="tag-header" style="margin-top:4px;"><span class="tag-pill pill-steam">STEAM</span></div><ul><li>U1 Lesson 2 Take It Further</li></ul>'
+        },
+        "2026-09-16": {
+            shared: '<div class="tag-header"><span class="tag-pill pill-speech">晨間演講</span></div><p>中文第 1 次</p>',
+            grade1: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Review p 36-37, read out loud.</li></ul>',
+            grade2: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>TB 36-37 / Main idea</li></ul>'
+        },
+        "2026-09-17": {
+            grade1: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Phonics p. 38-39, read the words out loud.</li></ul><div class="tag-header" style="margin-top:4px;"><span class="tag-pill pill-steam">STEAM</span></div><ul><li>Scavenger Hunt</li></ul>',
+            grade2: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>TB 38-41 / Monitor & clarify</li></ul>'
+        },
+        "2026-09-18": {
+            grade1: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Review p. 40-57 and read the reading.</li><li>Review vocabulary p. 35, 37.</li><li>Scholastic Reading.</li></ul>',
+            grade2: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>TB 42-55 / Photo Essay</li></ul>'
+        },
+        "2026-09-19": {
+            shared: '<div class="tag-header"><span class="tag-pill pill-school">全校</span></div><p>學校日 (上午)</p>'
+        },
+        "2026-09-21": {
+            grade1: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Review and read p. 58-59.</li></ul>',
+            grade2: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>TB 56-57 / Main ideas worksheet</li></ul>'
+        },
+        "2026-09-22": {
+            grade1: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Study p. 60 grammar.</li></ul>',
+            grade2: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>TB 58-61 / Favorite place</li></ul><div class="tag-header" style="margin-top:4px;"><span class="tag-pill pill-steam">STEAM</span></div><ul><li>U2 Lesson 1: Properties of Matter</li></ul>'
+        },
+        "2026-09-23": {
+            shared: '<div class="tag-header"><span class="tag-pill pill-speech">晨間演講</span></div><p>英文第 1 次</p>',
+            grade1: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Read p. 61-64 out loud.</li><li>Vocabulary quiz p. 35, 37 tomorrow.</li></ul>',
+            grade2: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>TB 62-63 / Spelling quiz prep</li></ul>'
+        },
+        "2026-09-24": {
+            grade1: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Review p. 65 grammar.</li><li>Reading worksheet.</li><li>Scholastic reading.</li></ul><div class="tag-header" style="margin-top:4px;"><span class="tag-pill pill-steam">STEAM</span></div><ul><li>Solve a Problem? Step 1-5</li></ul>',
+            grade2: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Webcast prep</li></ul>'
+        },
+        "2026-09-25": {
+            shared: '<div class="tag-header"><span class="tag-pill pill-school">全校</span></div><p>中秋節放假</p>'
+        },
+        "2026-09-28": {
+            shared: '<div class="tag-header"><span class="tag-pill pill-school">全校</span></div><p>教師節放假</p>'
+        },
+        "2026-09-29": {
+            grade1: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Review unit 1.</li><li>Sign vocabulary 1.2 quiz.</li></ul>',
+            grade2: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Review for Unit 1 quiz</li></ul><div class="tag-header" style="margin-top:4px;"><span class="tag-pill pill-steam">STEAM</span></div><ul><li>U2 Lesson 1&2: Objects Put Together</li></ul>'
+        },
+        "2026-09-30": {
+            shared: '<div class="tag-header"><span class="tag-pill pill-speech">晨間演講</span></div><p>中文第 2 次</p>',
+            grade1: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Review for unit 1 quiz tomorrow.</li></ul>',
+            grade2: '<div class="tag-header"><span class="tag-pill pill-language-art">Language Arts</span></div><ul><li>Preview Unit 2 vocabulary</li></ul>'
+        }
+    };
+let check=false;const done=new Set(),extra={};const make=(tag,text)=>{const n=document.createElement(tag);if(text)n.textContent=text;return n;};
+function fill(td,date,who){const html=(database[date]?.[who]||'').replaceAll('弟弟聯絡本','聯絡本').replaceAll('哥哥聯絡本','聯絡本');td.innerHTML=html;for(const li of td.querySelectorAll('li'))if(/登記.*分數/.test(li.textContent))li.remove();if(extra[date+'-'+who]){const h=make('div');h.className='tag-header';h.innerHTML='<span class="tag-pill pill-brother">自訂待辦</span>';td.append(h);const ul=make('ul');for(const text of extra[date+'-'+who])ul.append(make('li',text));td.append(ul);}let i=0;for(const li of td.querySelectorAll('li')){const key=date+'-'+who+'-'+i++,text=li.textContent;if(/No class|No homework|quiz.*tomorrow/i.test(text))continue;if(check){li.parentElement.classList.add('checklist');const label=make('label');label.className=done.has(key)?'done':'';const box=make('input');box.type='checkbox';box.checked=done.has(key);box.onchange=()=>{box.checked?done.add(key):done.delete(key);render();};label.append(box,make('span',text));li.replaceChildren(label);}}}
+function render(){q('[data-act=check]').classList.toggle('on',check);q('[data-act=check]').setAttribute('aria-pressed',String(check));q('#month-progress').textContent=check?`已勾選 ${done.size} 項`:'';const body=q('#month-body');body.replaceChildren();for(let week=0;week<5;week++){const dates=make('tr');dates.className='dates';dates.append(make('th'));const upper=make('tr');upper.className='upper';const lower=make('tr');lower.className='lower';for(const [row,name] of [[upper,'弟弟'],[lower,'哥哥']]){const h=make('th',name);h.scope='row';h.className='who';h.append(make('br'),make('small',name==='弟弟'?'一年級':'二年級'));row.append(h);}for(let col=0;col<7;col++){const d=new Date(2026,7,31+week*7+col,12),key=`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`,outside=d.getMonth()===9;const heading=make('td',outside?'':(d.getMonth()===7?'8/31':String(d.getDate())));if(key==='2026-09-10')heading.className='selected';if(!outside&&database[key]?.shared){const common=make('div');common.innerHTML=database[key].shared;heading.append(common);}dates.append(heading);for(const [row,who] of [[upper,'grade1'],[lower,'grade2']]){const td=make('td');if(key==='2026-09-10')td.className='selected';if(!outside){fill(td,key,who);if(col<5&&!/放假/.test(database[key]?.shared||'')){const uniform=make('div',who==='grade1'?['運動服','運動服','便服','制服','便服'][col]:['體服','便服','便服','制服','體服'][col]);uniform.className='uniform';td.prepend(uniform);}}row.append(td);}}body.append(dates,upper,lower);}
+const detail=q('#month-detail');detail.replaceChildren();const t=make('table');for(const [who,name] of [['grade1','弟弟'],['grade2','哥哥']]){const tr=make('tr'),th=make('th',name);th.className='who';th.scope='row';const td=make('td');fill(td,'2026-09-10',who);tr.append(th,td);t.append(tr);}detail.append(t);}
+root.addEventListener('click',e=>{const act=e.target.closest('[data-act]')?.dataset.act;if(act==='check'){check=!check;render();}if(act==='today'){const panel=q('.details');panel.hidden=!panel.hidden;q('.scroll').hidden=!panel.hidden;q('[data-act=today]').textContent=panel.hidden?'📅 只看今天':'📅 返回月曆';}if(act==='add'){const input=q('input[type=text]'),date=q('input[type=date]').value,who=q('select').value;if(!input.value.trim()||!date)return;const key=date+'-'+who;extra[key]??=[];extra[key].push(input.value.trim());input.value='';check=true;render();}});q('input[type=text]').onkeydown=e=>{if(e.key==='Enter')q('[data-act=add]').click();};render();})();
+</script>
+</div>
+
