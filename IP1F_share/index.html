@@ -47,7 +47,7 @@
   <p class="privacy">勾選與自訂待辦會依座號與姓名同步到其他裝置，不會影響其他家庭或原始行事曆。</p>
 </main>
 <div class="identity" id="identity" hidden><form class="identity-card" id="identity-form"><h2>第一次使用</h2><p>請輸入孩子的座號與姓名。其他手機或電腦輸入完全相同的資料，就會開啟同一份紀錄。</p><label>座號<input id="seat" type="number" min="1" max="99" inputmode="numeric" required autocomplete="off"></label><label>孩子姓名<input id="child-name" type="text" maxlength="20" required autocomplete="name"></label><div class="identity-error" id="identity-error" role="alert"></div><button class="button" type="submit">開啟行事曆</button></form></div>
-<script src="data.js"></script>
+<script src="data.js?v=20260911-4"></script>
 <script>
 (()=>{
 const data=window.IP1F_DATA,db=JSON.parse(JSON.stringify(data.base)),identityKey='ip1f-share:v2:identity',apiBase='https://ip1f-calendar.vdodaco.chatgpt.site',done=new Set();let extra={},profile=null,viewMonth=8,todayOnly=false;
