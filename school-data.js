@@ -336,6 +336,18 @@ window.SCHOOL_DATA = {
       "text": "WBC 課外活動"
     },
     {
+      "date": "2026-11-10",
+      "who": "grade1",
+      "label": "WBC",
+      "text": "WBC 課外活動"
+    },
+    {
+      "date": "2026-10-06",
+      "who": "grade2",
+      "label": "WBC",
+      "text": "WBC 課外活動"
+    },
+    {
       "date": "2026-12-15",
       "who": "grade2",
       "label": "WBC",
