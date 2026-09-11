@@ -38,7 +38,7 @@ window.IP1F_DATA = {
     },
     "2026-09-11": {
       "shared": "",
-      "grade1": "<div class=\"tag-header\"><span class=\"tag-pill pill-language-art\">Language Arts</span></div><ul><li>Review p. 33 grammar on plural nouns.</li><li>Reading worksheet.</li><li>Scholastic Reading.</li></ul><div class=\"tag-header\"><span class=\"tag-pill pill-brother\">弟弟聯絡本</span></div><ul><li>複習「國語課本」P34–P37；背國語第三課課文 P34–P35；複習「數學課本」第一單元</li></ul><div class=\"tag-header\"><span class=\"tag-pill pill-exam\">考試</span></div><p>國語第二課</p>"
+      "grade1": "<div class=\"tag-header\"><span class=\"tag-pill pill-language-art\">Language Arts</span></div><ul><li>Review p. 33 grammar on plural nouns.</li><li>Reading worksheet.</li><li>Scholastic Reading.</li></ul><div class=\"tag-header\"><span class=\"tag-pill pill-brother\">弟弟聯絡本</span></div><ul><li>複習「國語課本」P34–P37</li><li>背國語第三課課文 P34–P35</li><li>複習「數學課本」第一單元</li></ul><div class=\"tag-header\"><span class=\"tag-pill pill-exam\">考試</span></div><p>國語第二課</p>"
     },
     "2026-09-14": {
       "shared": "",
