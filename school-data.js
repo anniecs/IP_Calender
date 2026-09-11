@@ -328,6 +328,38 @@ window.SCHOOL_DATA = {
       ]
     }
   ],
+  "activities": [
+    {
+      "date": "2026-09-15",
+      "who": "grade1",
+      "label": "WBC",
+      "text": "WBC 課外活動"
+    },
+    {
+      "date": "2026-12-15",
+      "who": "grade2",
+      "label": "WBC",
+      "text": "WBC 課外活動"
+    },
+    {
+      "date": "2026-11-16",
+      "who": "grade1",
+      "label": "田園教學",
+      "text": "田園教學－竹子湖"
+    },
+    {
+      "date": "2026-09-07",
+      "who": "grade2",
+      "label": "田園教學",
+      "text": "田園教學－竹子湖"
+    },
+    {
+      "date": "2026-11-23",
+      "who": "grade2",
+      "label": "田園教學",
+      "text": "田園教學－佑昇馬場"
+    }
+  ],
   "exams": [
     [
       "2026-09-11",
