@@ -43,7 +43,7 @@ const assert = (condition, message) => {
   const childCell = page.locator('td[data-date="2026-09-25"][data-who="grade1"]');
   assert(await childCell.getByText('帶水壺', { exact: true }).count() === 1, '舊版個人代辦未保留');
   assert(await childCell.locator('li:has-text("帶水壺") input').isChecked(), '個人代辦的舊勾選狀態未保留');
-  assert((await page.locator('td[data-date="2026-09-11"][data-who="grade1"]').innerText()).includes('複習「國語課本」P34–P37；背國語第三課課文 P34–P35'), '弟弟 9/11 聯絡本內容未顯示');
+  assert((await page.locator('td[data-date="2026-09-11"][data-who="grade1"]').innerText()).includes('複習「國語課本」P34–P37；複習「數學課本」第一單元'), '弟弟 9/11 聯絡本內容未顯示');
 
   page.once('dialog', dialog => dialog.accept('鋼琴課改期'));
   await heading.getByRole('button', { name: '編輯代辦：鋼琴課' }).click();
