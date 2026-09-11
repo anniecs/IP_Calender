@@ -34,11 +34,11 @@ window.IP1F_DATA = {
     },
     "2026-09-10": {
       "shared": "",
-      "grade1": "<div class=\"tag-header\"><span class=\"tag-pill pill-language-art\">Language Arts</span></div><ul><li>Review p. 27-32 and read out loud.</li></ul><div class=\"tag-header\" style=\"margin-top:4px;\"><span class=\"tag-pill pill-steam\">STEAM</span></div><ul><li>How Do Engineers Use Technology?</li></ul><div class=\"tag-header\"><span class=\"tag-pill pill-brother\">弟弟聯絡本</span></div><ul><li>複習「國語習作」第一課、第二課</li></ul>"
+      "grade1": "<div class=\"tag-header\"><span class=\"tag-pill pill-language-art\">Language Arts</span></div><ul><li>Review p. 27-32 and read out loud.</li><li>Vocabulary Quiz (p. 5, 7) tomorrow.</li></ul><div class=\"tag-header\" style=\"margin-top:4px;\"><span class=\"tag-pill pill-steam\">STEAM</span></div><ul><li>How Do Engineers Use Technology?</li></ul><div class=\"tag-header\"><span class=\"tag-pill pill-brother\">弟弟聯絡本</span></div><ul><li>複習「國語習作」第一課、第二課</li></ul>"
     },
     "2026-09-11": {
       "shared": "",
-      "grade1": "<div class=\"tag-header\"><span class=\"tag-pill pill-language-art\">Language Arts</span></div><ul><li>Review p. 33 grammar on plural nouns.</li><li>Reading worksheet.</li><li>Scholastic Reading.</li></ul><div class=\"tag-header\"><span class=\"tag-pill pill-exam\">考試</span></div><p>國語第二課</p>"
+      "grade1": "<div class=\"tag-header\"><span class=\"tag-pill pill-language-art\">Language Arts</span></div><ul><li>Review p. 33 grammar on plural nouns.</li><li>Reading worksheet.</li><li>Scholastic Reading.</li></ul><div class=\"tag-header\"><span class=\"tag-pill pill-brother\">弟弟聯絡本</span></div><ul><li>複習「國語課本」P34–P37；背國語第三課課文 P34–P35</li></ul><div class=\"tag-header\"><span class=\"tag-pill pill-exam\">考試</span></div><p>國語第二課</p>"
     },
     "2026-09-14": {
       "shared": "",
