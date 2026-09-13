@@ -20,7 +20,8 @@ const assert = (condition, message) => {
     localStorage.setItem('ip-calendar:v2:device-state', JSON.stringify({
       done: [
         '2026-09-25-shared-text:鋼琴課',
-        '2026-09-25-grade1-text:帶水壺'
+        '2026-09-25-grade1-text:帶水壺',
+        '2026-09-11-grade1-text:複習「國語課本」P34–P37'
       ],
       extra: {
         '2026-09-25-shared': ['鋼琴課'],
@@ -45,6 +46,7 @@ const assert = (condition, message) => {
   assert(await childCell.locator('li:has-text("帶水壺") input').isChecked(), '個人代辦的舊勾選狀態未保留');
   const sep11Tasks = await page.locator('td[data-date="2026-09-11"][data-who="grade1"] li').allInnerTexts();
   for (const task of ['複習「國語課本」P34–P37', '背國語第三課課文 P34–P35', '複習「數學課本」第一單元']) assert(sep11Tasks.includes(task), `弟弟 9/11 聯絡本缺少獨立項目：${task}`);
+  assert(await page.locator('td[data-date="2026-09-11"][data-who="grade1"] li:has-text("複習「國語課本」P34–P37") input').isChecked(), '一般作業的舊勾選狀態未轉換');
 
   page.once('dialog', dialog => dialog.accept('鋼琴課改期'));
   await heading.getByRole('button', { name: '編輯代辦：鋼琴課' }).click();
@@ -52,6 +54,7 @@ const assert = (condition, message) => {
   assert(await heading.locator('input[type="checkbox"]').first().isChecked(), '編輯後勾選狀態未保留');
   await page.reload({ waitUntil: 'domcontentloaded' });
   assert(await page.locator('.dates td[data-date="2026-09-25"]').getByText('鋼琴課改期', { exact: true }).count() === 1, '重新開啟後編輯內容未保留');
+  assert(await page.locator('td[data-date="2026-09-11"][data-who="grade1"] li:has-text("複習「國語課本」P34–P37") input').isChecked(), '重新開啟後一般作業勾選未保留');
 
   await page.locator('.todo-add input[type="date"]').fill('2026-09-25');
   await page.locator('.todo-add select').selectOption('shared');
