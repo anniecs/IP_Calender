@@ -68,6 +68,16 @@ const assert = (condition, message) => {
 
   const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('ip-calendar:v2:device-state')));
   assert(typeof stored.extra['2026-09-25-shared'][0] === 'object', '舊資料未轉換成可編輯格式');
+
+  await page.locator('[data-act="accounts"]').click();
+  await page.locator('#account-password').fill('19850515');
+  await page.locator('[data-act="unlock"]').click();
+  const appRow = page.locator('#account-content tr').filter({ hasText: '國小app' });
+  await appRow.waitFor({ state: 'visible' });
+  assert(await appRow.count() === 1, '學習帳密區缺少國小app');
+  assert(await appRow.locator('code').count() === 2, '國小app應顯示兩位孩子的帳號');
+  assert((await appRow.innerText()).includes('爸爸 D、媽媽 M、其他 O'), '國小app缺少家長代碼說明');
+  assert((await appRow.innerText()).includes('請使用「國小 app」'), '國小app缺少使用方式');
   assert(errors.length === 0, `頁面錯誤：${errors.join('; ')}`);
   await browser.close();
   console.log('Personal calendar todo checks passed.');
