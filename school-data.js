@@ -333,7 +333,7 @@ window.SCHOOL_DATA = {
       "date": "2026-09-15",
       "who": "grade1",
       "label": "WBC",
-      "text": "WBC 課外活動"
+      "text": "WBC 行前活動｜地點：WBC 大樓｜服裝：薇小體服（長褲）＋運動鞋｜攜帶：600cc 水壺、個人藥品；雨天帶折傘｜課程：環境解密、雲動身韻、創藝智造、盤上冒險｜勿帶零食、口香糖及飲料｜<a href=\"assets/wbc-notice-2026-09-15.jpg\" target=\"_blank\" rel=\"noopener\">查看原始通知</a>"
     },
     {
       "date": "2026-11-10",

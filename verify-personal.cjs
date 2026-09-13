@@ -47,6 +47,12 @@ const assert = (condition, message) => {
   const sep11Tasks = await page.locator('td[data-date="2026-09-11"][data-who="grade1"] li').allInnerTexts();
   for (const task of ['複習「國語課本」P34–P37', '背國語第三課課文 P34–P35', '複習「數學課本」第一單元']) assert(sep11Tasks.includes(task), `弟弟 9/11 聯絡本缺少獨立項目：${task}`);
   assert(await page.locator('td[data-date="2026-09-11"][data-who="grade1"] li:has-text("複習「國語課本」P34–P37") input').isChecked(), '一般作業的舊勾選狀態未轉換');
+  const wbcCell = page.locator('td[data-date="2026-09-15"][data-who="grade1"]');
+  const wbcText = await wbcCell.innerText();
+  for (const detail of ['WBC 大樓', '600cc 水壺', '薇小體服（長褲）＋運動鞋', '勿帶零食']) assert(wbcText.includes(detail), `WBC 須知缺少：${detail}`);
+  assert(await wbcCell.locator('a[href="assets/wbc-notice-2026-09-15.jpg"]').count() === 1, 'WBC 原始通知連結遺失');
+  const readingText = await page.locator('td[data-date="2026-09-16"][data-who="grade1"]').innerText();
+  assert(readingText.includes('中文第 1 次｜上台座號：1、2、3、4、42、43、44'), '9/16 晨間朗讀座號不完整');
 
   page.once('dialog', dialog => dialog.accept('鋼琴課改期'));
   await heading.getByRole('button', { name: '編輯代辦：鋼琴課' }).click();
