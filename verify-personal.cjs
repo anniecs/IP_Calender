@@ -84,6 +84,9 @@ const assert = (condition, message) => {
   assert(await appRow.locator('code').count() === 2, '國小app應顯示兩位孩子的帳號');
   assert((await appRow.innerText()).includes('爸爸 D、媽媽 M、其他 O'), '國小app缺少家長代碼說明');
   assert((await appRow.innerText()).includes('請使用「國小 app」'), '國小app缺少使用方式');
+  const hmhRow = page.locator('#account-content tr').filter({ hasText: 'HMH' });
+  assert(await hmhRow.count() === 1, '學習帳密區缺少 HMH');
+  assert(await hmhRow.locator('a').getAttribute('href') === 'https://www.hmhco.com/ui/login/?connection=88733990', 'HMH 登入網址不正確');
   assert(errors.length === 0, `頁面錯誤：${errors.join('; ')}`);
   await browser.close();
   console.log('Personal calendar todo checks passed.');
