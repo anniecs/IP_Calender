@@ -58,6 +58,19 @@ const assert = (condition, message) => {
   assert(codingText.includes('數位與邏輯'), '弟弟行事曆缺少 Coding 課程標籤');
   assert(codingText.includes('第 3 週：海豚歐文的研究室（一）｜STEAM＋Maker'), '弟弟 Coding 第 3 週內容不正確');
   assert(await page.locator('td[data-date="2026-09-17"][data-who="grade1"] .pill-coding').count() === 1, 'Coding 課程標籤樣式未套用');
+  const sep18Text = await page.locator('td[data-date="2026-09-18"][data-who="grade1"]').innerText();
+  for (const detail of ['複習「注音①號本」第四課並訂正', '依班級雲端進度表複習 LA', '線上查看 STEAM 課程相關補充', '檢查鉛筆盒文具並削好鉛筆', '本週沒有 Reading Worksheet', '下週三（9/23）考國語第四課']) assert(sep18Text.includes(detail), `弟弟 9/18 聯絡本缺少：${detail}`);
+  assert(await page.locator('td[data-date="2026-09-18"][data-who="grade1"] .pill-brother').count() === 1, '9/18 聯絡本標籤樣式不正確');
+  const noticeChecks = {
+    '2026-09-19': '五樓活動中心',
+    '2026-09-21': '完成藍思閱讀測驗',
+    '2026-09-23': '牙齒塗氟：攜帶牙刷（當日帶回）',
+    '2026-09-24': '家庭樹活動：攜帶數張已剪好的家人照片',
+    '2026-09-30': '疫苗意願簽署截止'
+  };
+  for (const [date, detail] of Object.entries(noticeChecks)) assert((await page.locator(`td[data-date="${date}"][data-who="grade1"]`).innerText()).includes(detail), `${date} 日期通知缺少：${detail}`);
+  assert((await page.locator('td[data-date="2026-09-22"][data-who="grade1"]').innerText()).includes('明天考試：國語第四課'), '9/22 缺少國語第四課考試提醒');
+  assert((await page.locator('td[data-date="2026-09-23"][data-who="grade1"]').innerText()).includes('國語第四課'), '9/23 缺少國語第四課考試');
 
   page.once('dialog', dialog => dialog.accept('鋼琴課改期'));
   await heading.getByRole('button', { name: '編輯代辦：鋼琴課' }).click();
