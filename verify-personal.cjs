@@ -80,6 +80,14 @@ const assert = (condition, message) => {
   const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('ip-calendar:v2:device-state')));
   assert(typeof stored.extra['2026-09-25-shared'][0] === 'object', '舊資料未轉換成可編輯格式');
 
+  await page.locator('[data-act="reading-reports"]').click();
+  const readingReports = page.locator('.reading-reports');
+  await readingReports.waitFor({ state: 'visible' });
+  const reportText = await readingReports.innerText();
+  for (const detail of ['English Recital Vol. 3', '每週五 08:00–08:15', '一週最多繳交兩本', '每週一交給老師', 'Bronze 銅牌獎']) assert(reportText.includes(detail), `英文閱讀報告摘要缺少：${detail}`);
+  assert(await readingReports.locator('a[href*="1XP-WRuMt2kkuusNBTrWGRJAKecmkNLot"]').count() === 1, '蘇菲亞獎原始資料夾連結遺失');
+  assert(await readingReports.locator('a[href*="1B9W7pisjAXUqNYVwV0R3vHmx107YXte2"]').count() === 1, '英文讀書心得原始資料夾連結遺失');
+
   await page.locator('[data-act="accounts"]').click();
   await page.locator('#account-password').fill('19850515');
   await page.locator('[data-act="unlock"]').click();
