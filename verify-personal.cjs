@@ -98,8 +98,21 @@ const assert = (condition, message) => {
   await readingReports.waitFor({ state: 'visible' });
   const reportText = await readingReports.innerText();
   for (const detail of ['English Recital Vol. 3', '每週五 08:00–08:15', '一週最多繳交兩本', '每週一交給老師', 'Bronze 銅牌獎']) assert(reportText.includes(detail), `英文閱讀報告摘要缺少：${detail}`);
-  assert(await readingReports.locator('a[href*="1XP-WRuMt2kkuusNBTrWGRJAKecmkNLot"]').count() === 1, '蘇菲亞獎原始資料夾連結遺失');
-  assert(await readingReports.locator('a[href*="1B9W7pisjAXUqNYVwV0R3vHmx107YXte2"]').count() === 1, '英文讀書心得原始資料夾連結遺失');
+  assert(await readingReports.locator('a[href^="https://drive.google.com"]').count() === 0, '英文閱讀報告仍含需要登入的 Google Drive 連結');
+  assert(await readingReports.locator('a[href="reading-reports.html#recital"]').count() === 1, '蘇菲亞獎站內教材入口遺失');
+  assert(await readingReports.locator('a[href="reading-reports.html#book-report"]').count() === 1, '英文讀書心得站內原檔入口遺失');
+  assert(reportText.includes('不需要登入 Google 帳號'), '英文閱讀報告缺少免登入說明');
+
+  const gallery = await browser.newPage();
+  await gallery.goto('file:///C:/Users/User/Desktop/IP_Calender/publish/reading-reports.html');
+  assert(await gallery.locator('#recital .file').count() === 20, '蘇菲亞獎教材數量不正確');
+  assert(await gallery.locator('#book-report .file').count() === 4, '英文讀書心得原檔數量不正確');
+  assert(await gallery.locator('a[href$=".HEIC"]').count() === 18, 'HEIC 原始檔下載入口數量不正確');
+  assert(await gallery.locator('img[src$=".jpg"], img[src$=".JPG"]').count() === 20, '可直接瀏覽的教材圖片數量不正確');
+  await gallery.waitForFunction(() => [...document.images].every(image => image.complete));
+  assert(await gallery.locator('img').evaluateAll(images => images.every(image => image.naturalWidth > 0)), '英文閱讀教材含無法載入的圖片');
+  await gallery.setViewportSize({ width: 390, height: 844 });
+  assert(!(await gallery.evaluate(() => document.documentElement.scrollWidth > innerWidth)), '英文閱讀原檔頁面在手機上發生水平溢位');
 
   await page.locator('[data-act="accounts"]').click();
   await page.locator('#account-password').fill('19850515');
