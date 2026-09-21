@@ -31,6 +31,7 @@ const assert = (condition, message) => {
     }));
   });
   await page.reload({ waitUntil: 'domcontentloaded' });
+  await page.waitForTimeout(500);
   if (errors.length) throw new Error(`頁面錯誤：${errors.join('; ')}`);
 
   const heading = page.locator('.dates td[data-date="2026-09-25"]');
@@ -53,6 +54,10 @@ const assert = (condition, message) => {
   assert(await wbcCell.locator('a[href="assets/wbc-notice-2026-09-15.jpg"]').count() === 1, 'WBC 原始通知連結遺失');
   const readingText = await page.locator('td[data-date="2026-09-16"][data-who="grade1"]').innerText();
   assert(readingText.includes('中文第 1 次｜上台座號：1、2、3、4、42、43、44'), '9/16 晨間朗讀座號不完整');
+  const codingText = await page.locator('td[data-date="2026-09-17"][data-who="grade1"]').innerText();
+  assert(codingText.includes('數位與邏輯'), '弟弟行事曆缺少 Coding 課程標籤');
+  assert(codingText.includes('第 3 週：海豚歐文的研究室（一）｜STEAM＋Maker'), '弟弟 Coding 第 3 週內容不正確');
+  assert(await page.locator('td[data-date="2026-09-17"][data-who="grade1"] .pill-coding').count() === 1, 'Coding 課程標籤樣式未套用');
 
   page.once('dialog', dialog => dialog.accept('鋼琴課改期'));
   await heading.getByRole('button', { name: '編輯代辦：鋼琴課' }).click();

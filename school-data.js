@@ -37,6 +37,70 @@ window.SCHOOL_DATA = {
     {
       "date": "2026-09-03",
       "who": "grade1",
+      "subject": "數位與邏輯",
+      "tasks": [
+        "第 1 週：貓抓老鼠（一）｜程式概念：搜尋"
+      ]
+    },
+    {
+      "date": "2026-09-10",
+      "who": "grade1",
+      "subject": "數位與邏輯",
+      "tasks": [
+        "第 2 週：貓抓老鼠（二）｜程式概念：搜尋"
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "who": "grade1",
+      "subject": "數位與邏輯",
+      "tasks": [
+        "第 3 週：海豚歐文的研究室（一）｜STEAM＋Maker"
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "who": "grade1",
+      "subject": "數位與邏輯",
+      "tasks": [
+        "第 4 週：海豚歐文的研究室（二）｜STEAM＋Maker"
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "who": "grade1",
+      "subject": "數位與邏輯",
+      "tasks": [
+        "第 5 週：伊恩變魔術（一）｜程式概念：二進位"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "who": "grade1",
+      "subject": "數位與邏輯",
+      "tasks": [
+        "第 6 週：伊恩變魔術（二）｜程式概念：二進位"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "who": "grade1",
+      "subject": "數位與邏輯",
+      "tasks": [
+        "第 7 週：會說話的海豚歐文（一）｜程式概念：True & False"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "who": "grade1",
+      "subject": "數位與邏輯",
+      "tasks": [
+        "第 8 週：會說話的海豚歐文（二）｜程式概念：True & False"
+      ]
+    },
+    {
+      "date": "2026-09-03",
+      "who": "grade1",
       "subject": "STEAM",
       "tasks": [
         "線上學習平台操作教學"

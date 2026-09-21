@@ -1,4 +1,4 @@
-"""Download public class PDFs, report content changes; never changes calendar itself."""
+"""Download accessible class PDFs, report content changes; never changes calendar itself."""
 from pathlib import Path
 from html.parser import HTMLParser
 import urllib.request, json, hashlib, re
@@ -7,6 +7,7 @@ CACHE=ROOT.parent/'sources'/'automatic'
 SOURCES={
  'grade1-la':('1FBZ9QcojKQqlArU73VQItFoulVHAUuFT',r'^Unit'),
  'grade1-steam':('1oTfSorD_4ckz5jyNDljvE-JJTavx5mJN',r'.*'),
+ 'grade1-coding':('1NS8C_GjVTPchcXUxthhwLDeTXRzDwFlg',r'coding|數位|邏輯'),
  'grade2-la':('16F6Saq-wK5hPfFCKf061ZLjhqK5cuC8b',r'^Unit'),
  'grade2-steam':('1S5oeMCo7EBCEqmdPcr2V5IXoLlTiLC2e',r'STEAM'),
 }
