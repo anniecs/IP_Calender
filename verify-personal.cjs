@@ -114,6 +114,16 @@ const assert = (condition, message) => {
   await gallery.setViewportSize({ width: 390, height: 844 });
   assert(!(await gallery.evaluate(() => document.documentElement.scrollWidth > innerWidth)), '英文閱讀原檔頁面在手機上發生水平溢位');
 
+  await page.locator('[data-act="book-award"]').click();
+  const bookAward = page.locator('.book-award');
+  await bookAward.waitFor({ state: 'visible' });
+  const awardText = await bookAward.innerText();
+  for (const detail of ['二年級下學期', '每學期只能申請一個獎項', '書香獎', '10 篇', '學士獎', '碩士獎', '博士獎', '諾貝爾獎', '日期至少間隔兩天']) assert(awardText.includes(detail), `書香獎專區缺少：${detail}`);
+  assert(await bookAward.locator('a[href$=".pdf"]').count() === 8, '書香獎 PDF 連結數量不正確');
+  assert(await bookAward.locator('tbody tr').count() === 5, '書香獎級別表格數量不正確');
+  await page.setViewportSize({ width: 390, height: 844 });
+  assert(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)), '書香獎專區在手機上發生頁面水平溢位');
+
   await page.locator('[data-act="accounts"]').click();
   await page.locator('#account-password').fill('19850515');
   await page.locator('[data-act="unlock"]').click();
