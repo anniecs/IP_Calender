@@ -982,5 +982,54 @@ window.SCHOOL_DATA = {
       "grade2",
       "LA Spelling Quiz：TB P107、P109 與標示單字"
     ]
+  ],
+  "examScopes": [
+    {
+      "date": "2026-11-04",
+      "who": "grade1",
+      "title": "LA 期中考範圍（IP1F）",
+      "source": "assets/sources/2026-11-midterm/S__173948934_0.jpg",
+      "topics": [
+        "Vocabulary：依上下文選出兩個合適單字完成句子；拼寫字庫中的目標單字。",
+        "Phonics：聽音拼寫子音組合並辨識音素；辨識與聽到的單字相同的畫線發音。",
+        "Grammar：複數名詞；專有名詞首字母大寫；辨識大小、顏色、形狀、數量的形容詞。",
+        "Word Study：依上下文將名詞分成人、地點、事物；依共同特徵分類單字。",
+        "Reading Strategies：閱讀後重述及回應；根據文中細節掌握角色行動。",
+        "Reading Comprehension：依細節辨識故事場景；理解角色與情節；預測並作結論。"
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "who": "grade2",
+      "title": "LA 期中考範圍（IP2F）",
+      "source": "assets/sources/2026-11-midterm/S__173948935_0.jpg",
+      "topics": [
+        "Vocabulary：依上下文選字完成句子；單字與定義配對。",
+        "Phonics：聽音正確拼寫單字；聽完整單字後補上缺少的字母。",
+        "Word Work：辨識句中單字表示動作、地點或人物；依字母順序排列；了解字典用途與查字方法。",
+        "Grammar：專有名詞大寫與所有格名詞；依字尾辨識正確複數形式；依句意正確使用動作動詞與助動詞。",
+        "Reading Strategies and Comprehension：理解並運用閱讀策略；辨識主旨與細節；描述角色與情節；比較角色。"
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "who": "grade2",
+      "title": "國語期中考範圍",
+      "source": "assets/sources/2026-11-midterm/S__269762574.jpg",
+      "topics": [
+        "國語：第一至第六課、統整活動一、二。",
+        "英文範圍另見 LA 期中考範圍單。"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "who": "grade2",
+      "title": "數學、生活期中考範圍",
+      "source": "assets/sources/2026-11-midterm/S__269762574.jpg",
+      "topics": [
+        "數學：第一至第五單元（含補充教材）。",
+        "生活：第一至第三單元（含補充教材）。"
+      ]
+    }
   ]
 };
