@@ -401,9 +401,451 @@ window.SCHOOL_DATA = {
       "tasks": [
         "Preview Unit 2 vocabulary"
       ]
+    },
+    {
+      "date": "2026-10-01",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "Sing TB P72",
+        "Unit 2 video worksheet",
+        "Memorize TB P73 vocabulary words"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review TB P74",
+        "Memorize TB P75",
+        "Scholastic Reading"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review TB P76–P77",
+        "Finish reading strategy worksheet"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "No class：Base Camp"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review TB P78–P79",
+        "Use one ph、th、qu word to make a sentence"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "Read TB P80–P95",
+        "Memorize highlighted words",
+        "Scholastic Reading"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review TB P96–P97",
+        "Read PB P2.4、P2.8"
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review TB P98–P103",
+        "Memorize highlighted words"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review TB P104–P105"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "Grammar worksheet"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "Listen and sing TB P106",
+        "Memorize TB P107",
+        "Scholastic Reading"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review TB P108",
+        "Memorize TB P109",
+        "Research animals and shared features for writing project"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review TB P110–P111"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "TB P112–P113",
+        "Use one thr、shr、squ word to make a sentence"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review TB P114–P127",
+        "Memorize highlighted words"
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "TB P128–P130",
+        "Read PB P2.14、P2.18",
+        "Scholastic Reading"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "TB P130–P133",
+        "Memorize highlighted words"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review TB P134–P135"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review for midterm"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review for midterm"
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review for midterm"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Think about what living things need on p.70-71.",
+        "Sign Unit 1 quiz."
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Sing the song and review the words on p.72-73."
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review living and nonliving on p.74.",
+        "Read the sentences on p.75."
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Read the phonics on p.76-77, and think of other words."
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Reread p. 78-91.",
+        "Prepare for vocabulary quiz 2.1 on 10/12."
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "No Homework"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review p.92-93, and reading.",
+        "Reading homework."
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review p. 94. Reread the reading on p.95-98.",
+        "Sign vocabulary quiz 2.1."
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review p.99, and think of other adjectives to share in class."
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Preview part 2"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Study the vocabulary on p.100-101."
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Read and study the vocabulary on p.102-103."
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review the phonics on p.104-105, and think of other words."
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Reread p.106-125.",
+        "Review for vocabulary quiz 2.2 next class."
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review p.126-127",
+        "Reading WS."
+      ]
+    },
+    {
+      "date": "2026-10-23",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review p.128.",
+        "Reread p.129-134, and review the words.",
+        "Sign vocabulary quiz 2.2."
+      ]
+    },
+    {
+      "date": "2026-10-26",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "No Homework"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Think about a sentence with an adjective from p.135."
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review unit 1"
+      ]
+    },
+    {
+      "date": "2026-10-29",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review unit 2"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "No Homework"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review units 1-2."
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Study for midterm test."
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "No Homework"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review unit 3"
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "who": "grade1",
+      "subject": "期中複習",
+      "tasks": [
+        "依 Midterm Study Guide 複習：單字拼寫、自然發音、複數名詞、專有名詞大寫、形容詞、名詞分類、閱讀策略與理解。"
+      ]
+    },
+    {
+      "date": "2026-10-13",
+      "who": "grade2",
+      "subject": "STEAM 專題",
+      "tasks": [
+        "開始準備 Geometricity 立體城市專題材料（10/13–10/19），依設計圖準備木棒、黏土、紙或乾淨回收物。"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "who": "grade2",
+      "subject": "STEAM 專題",
+      "tasks": [
+        "繳交立體城市設計圖，攜帶製作材料；模型於課堂自行完成。"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "who": "grade2",
+      "subject": "STEAM 專題",
+      "tasks": [
+        "課堂製作 Geometricity 立體城市：至少使用四種立體形狀並清楚標示。"
+      ]
+    },
+    {
+      "date": "2026-10-27",
+      "who": "grade2",
+      "subject": "STEAM 專題",
+      "tasks": [
+        "課堂製作 Geometricity 立體城市專題，依設計圖完成模型。"
+      ]
     }
   ],
   "activities": [
+    {
+      "date": "2026-10-01",
+      "who": "grade2",
+      "label": "LA 原始進度表",
+      "text": "Unit 2（10/1–11/5）｜<a href=\"https://drive.google.com/file/d/1_DeBZHFStWQu96p69LvrDm2roi2e_MyC/view\" target=\"_blank\" rel=\"noopener\">查看原始 PDF</a>"
+    },
     {
       "date": "2026-09-18",
       "who": "grade1",
@@ -529,6 +971,16 @@ window.SCHOOL_DATA = {
       "2026-09-30",
       "grade2",
       "LA Unit 1 Quiz"
+    ],
+    [
+      "2026-10-15",
+      "grade2",
+      "LA Spelling Quiz：TB P73、P75 與標示單字"
+    ],
+    [
+      "2026-10-29",
+      "grade2",
+      "LA Spelling Quiz：TB P107、P109 與標示單字"
     ]
   ]
 };

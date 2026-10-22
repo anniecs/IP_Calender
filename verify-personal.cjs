@@ -33,6 +33,9 @@ const assert = (condition, message) => {
   await page.reload({ waitUntil: 'domcontentloaded' });
   await page.waitForTimeout(500);
   if (errors.length) throw new Error(`頁面錯誤：${errors.join('; ')}`);
+  const today = new Date();
+  assert(await page.locator('#month-select').inputValue() === String((today.getFullYear() - 2026) * 12 + today.getMonth()), '首頁未顯示當月');
+  await page.locator('#month-select').selectOption('8');
 
   const heading = page.locator('.dates td[data-date="2026-09-25"]');
   const headingText = await heading.innerText();
@@ -77,6 +80,7 @@ const assert = (condition, message) => {
   assert(await heading.getByText('鋼琴課改期', { exact: true }).count() === 1, '編輯後文字未更新');
   assert(await heading.locator('input[type="checkbox"]').first().isChecked(), '編輯後勾選狀態未保留');
   await page.reload({ waitUntil: 'domcontentloaded' });
+  await page.locator('#month-select').selectOption('8');
   assert(await page.locator('.dates td[data-date="2026-09-25"]').getByText('鋼琴課改期', { exact: true }).count() === 1, '重新開啟後編輯內容未保留');
   assert(await page.locator('td[data-date="2026-09-11"][data-who="grade1"] li:has-text("複習「國語課本」P34–P37") input').isChecked(), '重新開啟後一般作業勾選未保留');
 
@@ -92,6 +96,28 @@ const assert = (condition, message) => {
 
   const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('ip-calendar:v2:device-state')));
   assert(typeof stored.extra['2026-09-25-shared'][0] === 'object', '舊資料未轉換成可編輯格式');
+
+  await page.locator('#month-select').selectOption('9');
+  const unit2Checks = {
+    '2026-10-01': ['Sing TB P72', 'Unit 2 video worksheet', 'Memorize TB P73 vocabulary words', 'LA 原始進度表'],
+    '2026-10-08': ['Read TB P80–P95', 'Memorize highlighted words', 'Scholastic Reading'],
+    '2026-10-14': ['Review TB P104–P105'],
+    '2026-10-19': ['Review TB P108', 'Research animals and shared features for writing project'],
+    '2026-10-23': ['TB P128–P130', 'Read PB P2.14、P2.18'],
+    '2026-10-30': ['Review for midterm']
+  };
+  for (const [date, details] of Object.entries(unit2Checks)) {
+    const text = await page.locator(`td[data-date="${date}"][data-who="grade2"]`).innerText();
+    for (const detail of details) assert(text.includes(detail), `哥哥 Unit 2 ${date} 缺少：${detail}`);
+  }
+  assert(await page.locator('td[data-date="2026-10-01"][data-who="grade2"] a[href*="1_DeBZHFStWQu96p69LvrDm2roi2e_MyC"]').count() === 1, '哥哥 Unit 2 原始 PDF 連結遺失');
+  const oct14Text = await page.locator('td[data-date="2026-10-14"][data-who="grade2"]').innerText();
+  assert(oct14Text.includes('明天考試：LA Spelling Quiz：TB P73、P75 與標示單字'), '10/14 缺少隔日拼字考提醒');
+  assert(!oct14Text.includes('Review for 10/15 spelling quiz'), '10/14 重複顯示拼字考資訊');
+  assert((await page.locator('td[data-date="2026-10-15"][data-who="grade2"]').innerText()).includes('LA Spelling Quiz：TB P73、P75 與標示單字'), '10/15 缺少拼字考');
+  const oct28Text = await page.locator('td[data-date="2026-10-28"][data-who="grade2"]').innerText();
+  assert(oct28Text.includes('明天考試：LA Spelling Quiz：TB P107、P109 與標示單字'), '10/28 缺少隔日拼字考提醒');
+  assert(!oct28Text.includes('Review for 10/29 spelling quiz'), '10/28 重複顯示拼字考資訊');
 
   await page.locator('[data-act="reading-reports"]').click();
   const readingReports = page.locator('.reading-reports');
