@@ -150,6 +150,8 @@ const database = {
     };
 
 const originalDatabase=JSON.parse(JSON.stringify(database));
+const notices=[...root.querySelectorAll('section')].find(section=>section.querySelector('h3')?.textContent==='學期簡曆與原始資料');
+if(notices){notices.className='timetable notices';notices.querySelector('h3').textContent='📌 通知單';const heading=document.createElement('h4');heading.textContent='期中考範圍原始檔';const list=document.createElement('ul');for(const [title,source] of [['弟弟｜LA 期中考範圍','S__173948934_0.jpg'],['哥哥｜LA 期中考範圍','S__173948935_0.jpg'],['哥哥｜國語、數學、生活期中考範圍','S__269762574.jpg']]){const item=document.createElement('li'),link=document.createElement('a');link.textContent=title;link.href='assets/sources/2026-11-midterm/'+source;link.target='_blank';link.rel='noopener';item.append(link);list.append(item);}notices.append(heading,list);root.append(notices);}
 function legacyTaskKey(date,who,text){return date+'-'+who+'-text:'+text.trim();}
 function taskKey(date,who,section,index,todoId){return todoId?date+'-'+who+'-todo:'+todoId:date+'-'+who+'-slot:'+section+':'+index;}
 function block(title,cls,tasks){const el=document.createElement('div');const h=document.createElement('div');h.className='tag-header';const tag=document.createElement('span');tag.className='tag-pill '+cls;tag.textContent=title;h.append(tag);el.append(h);const ul=document.createElement('ul');for(const text of tasks){const li=document.createElement('li');li.textContent=text;ul.append(li);}el.append(ul);return el.innerHTML;}
