@@ -278,6 +278,94 @@ window.SCHOOL_DATA = {
       ]
     },
     {
+      "date": "2026-11-10",
+      "who": "grade2",
+      "subject": "STEAM",
+      "tasks": [
+        "How Do Heating and Cooling Change Matter?：Review、Melt It、Cook It、Burn It、Cool It Down"
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "who": "grade2",
+      "subject": "STEAM",
+      "tasks": [
+        "How Does Matter Change?：Review、Reversible Changes、Irreversible Changes"
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "who": "grade2",
+      "subject": "STEAM",
+      "tasks": [
+        "Heating and Cooling：Lesson Check；Matter Changes：Lesson Check"
+      ]
+    },
+    {
+      "date": "2026-12-01",
+      "who": "grade2",
+      "subject": "STEAM",
+      "tasks": [
+        "Matter：Unit Review"
+      ]
+    },
+    {
+      "date": "2026-12-08",
+      "who": "grade2",
+      "subject": "STEAM",
+      "tasks": [
+        "Final Project Introduction — No homework"
+      ]
+    },
+    {
+      "date": "2026-12-15",
+      "who": "grade2",
+      "subject": "STEAM",
+      "tasks": [
+        "WBC — No class"
+      ]
+    },
+    {
+      "date": "2026-12-22",
+      "who": "grade2",
+      "subject": "STEAM",
+      "tasks": [
+        "Group project（use class materials）"
+      ]
+    },
+    {
+      "date": "2026-12-29",
+      "who": "grade2",
+      "subject": "STEAM",
+      "tasks": [
+        "Finish project and do testing"
+      ]
+    },
+    {
+      "date": "2027-01-05",
+      "who": "grade2",
+      "subject": "STEAM",
+      "tasks": [
+        "What Do Plants Need?：Lesson Check"
+      ]
+    },
+    {
+      "date": "2027-01-12",
+      "who": "grade2",
+      "subject": "STEAM",
+      "tasks": [
+        "Final test — No class"
+      ]
+    },
+    {
+      "date": "2027-01-19",
+      "who": "grade2",
+      "subject": "STEAM",
+      "tasks": [
+        "Singing contest — No class"
+      ]
+    },
+    {
       "date": "2026-10-01",
       "who": "grade1",
       "subject": "Language Arts",
@@ -590,6 +678,185 @@ window.SCHOOL_DATA = {
       ]
     },
     {
+      "date": "2026-11-06",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "TB P142–P143",
+        "Complete video worksheet",
+        "Scholastic Reader"
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "TB P144–P145",
+        "Think and share：2 ways you use water every day"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "TB P146–P147",
+        "Complete problem-solution chart worksheet"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "TB P148–P149",
+        "Think and share：2 reasons why water is important"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "TB P150–P151",
+        "Think and share：2 words with ie、ey and other spelling"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "TB P152–P167",
+        "Reading worksheet",
+        "Scholastic Reader"
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "TB P168–P169",
+        "Retell \"Frog Brings Rain\" to someone at home"
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "TB P170–P173",
+        "Think and share：3 pairs of multiple-meaning words"
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "Preview TB P176–P177"
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "TB P176–P177",
+        "Think and share：3 machines that use water",
+        "Scholastic Reader"
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "Mountain — No homework"
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "TB P178–P179",
+        "Think and share：Tell about a problem you had and what caused it"
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "TB P180–P181",
+        "Complete Reading Strategy Worksheet"
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "TB P182–P183",
+        "Think and share：3 \"or\" words and 3 \"ore\" words"
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "TB P184–P197",
+        "Think and share：Would a PlayPump work at Wego? Why?",
+        "Scholastic Reader"
+      ]
+    },
+    {
+      "date": "2026-11-30",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "TB P198–P199",
+        "Complete Cause and Effect chart"
+      ]
+    },
+    {
+      "date": "2026-12-01",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "TB P200–P203",
+        "Think and share：2 words with a \"y\" suffix and 2 with an \"ion\" suffix"
+      ]
+    },
+    {
+      "date": "2026-12-03",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "Think and share：2 ways you can save water"
+      ]
+    },
+    {
+      "date": "2026-12-04",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "Scholastic Reader"
+      ]
+    },
+    {
+      "date": "2026-12-07",
+      "who": "grade2",
+      "subject": "Language Arts",
+      "tasks": [
+        "Preview Unit 4 vocabulary"
+      ]
+    },
+    {
       "date": "2026-10-02",
       "who": "grade1",
       "subject": "Language Arts",
@@ -841,6 +1108,18 @@ window.SCHOOL_DATA = {
   ],
   "activities": [
     {
+      "date": "2026-11-06",
+      "who": "grade2",
+      "label": "LA 原始進度表",
+      "text": "Unit 3（11/6–12/7）｜<a href=\"https://drive.google.com/file/d/1MCNr55F7JZ-GenqHUaIojEHScn3D6CSP/view\" target=\"_blank\" rel=\"noopener\">查看原始 PDF</a>"
+    },
+    {
+      "date": "2026-11-10",
+      "who": "grade2",
+      "label": "STEAM 原始進度表",
+      "text": "第 11–21 週｜<a href=\"https://drive.google.com/file/d/1hdixlNFe6zdd6F7T5mFNA5ddvvn5K5zk/view\" target=\"_blank\" rel=\"noopener\">查看原始 PDF</a>"
+    },
+    {
       "date": "2026-10-01",
       "who": "grade2",
       "label": "LA 原始進度表",
@@ -981,6 +1260,21 @@ window.SCHOOL_DATA = {
       "2026-10-29",
       "grade2",
       "LA Spelling Quiz：TB P107、P109 與標示單字"
+    ],
+    [
+      "2026-11-19",
+      "grade2",
+      "LA Spelling Quiz：TB P145、P147 與標示單字"
+    ],
+    [
+      "2026-12-03",
+      "grade2",
+      "LA Spelling Quiz：TB P177、P179 與標示單字"
+    ],
+    [
+      "2026-12-07",
+      "grade2",
+      "LA Unit 3 Quiz"
     ]
   ],
   "examScopes": [

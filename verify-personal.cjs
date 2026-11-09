@@ -119,6 +119,68 @@ const assert = (condition, message) => {
   assert(oct28Text.includes('明天考試：LA Spelling Quiz：TB P107、P109 與標示單字'), '10/28 缺少隔日拼字考提醒');
   assert(!oct28Text.includes('Review for 10/29 spelling quiz'), '10/28 重複顯示拼字考資訊');
 
+  await page.locator('#month-select').selectOption('10');
+  const steamScheduleChecks = {
+    '2026-11-10': ['How Do Heating and Cooling Change Matter?', 'Melt It', 'Cool It Down', 'STEAM 原始進度表'],
+    '2026-11-17': ['How Does Matter Change?', 'Reversible Changes', 'Irreversible Changes'],
+    '2026-11-24': ['Heating and Cooling：Lesson Check', 'Matter Changes：Lesson Check']
+  };
+  for (const [date, details] of Object.entries(steamScheduleChecks)) {
+    const text = await page.locator(`td[data-date="${date}"][data-who="grade2"]`).innerText();
+    for (const detail of details) assert(text.includes(detail), `哥哥 STEAM ${date} 缺少：${detail}`);
+  }
+  assert(await page.locator('td[data-date="2026-11-10"][data-who="grade2"] a[href*="1hdixlNFe6zdd6F7T5mFNA5ddvvn5K5zk"]').count() === 1, '哥哥 STEAM 第 11–21 週原始 PDF 連結遺失');
+
+  const unit3NovemberChecks = {
+    '2026-11-06': ['TB P142–P143', 'Complete video worksheet', 'Scholastic Reader', 'LA 原始進度表'],
+    '2026-11-10': ['TB P146–P147', 'Complete problem-solution chart worksheet'],
+    '2026-11-13': ['TB P152–P167', 'Reading worksheet', 'Scholastic Reader'],
+    '2026-11-17': ['TB P170–P173', '3 pairs of multiple-meaning words'],
+    '2026-11-27': ['TB P184–P197', 'Would a PlayPump work at Wego?', 'Scholastic Reader']
+  };
+  for (const [date, details] of Object.entries(unit3NovemberChecks)) {
+    const text = await page.locator(`td[data-date="${date}"][data-who="grade2"]`).innerText();
+    for (const detail of details) assert(text.includes(detail), `哥哥 Unit 3 ${date} 缺少：${detail}`);
+  }
+  assert(await page.locator('td[data-date="2026-11-06"][data-who="grade2"] a[href*="1MCNr55F7JZ-GenqHUaIojEHScn3D6CSP"]').count() === 1, '哥哥 Unit 3 原始 PDF 連結遺失');
+  const nov18Text = await page.locator('td[data-date="2026-11-18"][data-who="grade2"]').innerText();
+  assert(nov18Text.includes('明天考試：LA Spelling Quiz：TB P145、P147 與標示單字'), '11/18 缺少隔日拼字考提醒');
+  assert(!nov18Text.includes('Review for spelling quiz'), '11/18 重複顯示拼字考資訊');
+  assert((await page.locator('td[data-date="2026-11-19"][data-who="grade2"]').innerText()).includes('LA Spelling Quiz：TB P145、P147 與標示單字'), '11/19 缺少拼字考');
+
+  await page.locator('#month-select').selectOption('11');
+  for (const [date, detail] of Object.entries({
+    '2026-12-01': 'Matter：Unit Review',
+    '2026-12-08': 'Final Project Introduction — No homework',
+    '2026-12-15': 'WBC — No class',
+    '2026-12-22': 'Group project（use class materials）',
+    '2026-12-29': 'Finish project and do testing'
+  })) assert((await page.locator(`td[data-date="${date}"][data-who="grade2"]`).innerText()).includes(detail), `哥哥 STEAM ${date} 缺少：${detail}`);
+
+  const unit3DecemberChecks = {
+    '2026-12-01': ['TB P200–P203', '2 words with a "y" suffix', '2 with an "ion" suffix'],
+    '2026-12-03': ['Think and share：2 ways you can save water', 'LA Spelling Quiz：TB P177、P179 與標示單字'],
+    '2026-12-04': ['Scholastic Reader'],
+    '2026-12-07': ['Preview Unit 4 vocabulary', 'LA Unit 3 Quiz']
+  };
+  for (const [date, details] of Object.entries(unit3DecemberChecks)) {
+    const text = await page.locator(`td[data-date="${date}"][data-who="grade2"]`).innerText();
+    for (const detail of details) assert(text.includes(detail), `哥哥 Unit 3 ${date} 缺少：${detail}`);
+  }
+  const dec2Text = await page.locator('td[data-date="2026-12-02"][data-who="grade2"]').innerText();
+  assert(dec2Text.includes('明天考試：LA Spelling Quiz：TB P177、P179 與標示單字'), '12/2 缺少隔日拼字考提醒');
+  assert(!dec2Text.includes('Review for spelling quiz'), '12/2 重複顯示拼字考資訊');
+  const dec4Text = await page.locator('td[data-date="2026-12-04"][data-who="grade2"]').innerText();
+  assert(!dec4Text.includes('Review for Unit 3 quiz'), '12/4 重複顯示 Unit 3 考試資訊');
+  assert((await page.locator('td[data-date="2026-12-06"][data-who="grade2"]').innerText()).includes('明天考試：LA Unit 3 Quiz'), '12/6 缺少 Unit 3 考試提醒');
+
+  await page.locator('#month-select').selectOption('12');
+  for (const [date, detail] of Object.entries({
+    '2027-01-05': 'What Do Plants Need?：Lesson Check',
+    '2027-01-12': 'Final test — No class',
+    '2027-01-19': 'Singing contest — No class'
+  })) assert((await page.locator(`td[data-date="${date}"][data-who="grade2"]`).innerText()).includes(detail), `哥哥 STEAM ${date} 缺少：${detail}`);
+
   await page.locator('[data-act="reading-reports"]').click();
   const readingReports = page.locator('.reading-reports');
   await readingReports.waitFor({ state: 'visible' });
