@@ -148,6 +148,24 @@ const assert = (condition, message) => {
   assert(!nov18Text.includes('Review for spelling quiz'), '11/18 重複顯示拼字考資訊');
   assert((await page.locator('td[data-date="2026-11-19"][data-who="grade2"]').innerText()).includes('LA Spelling Quiz：TB P145、P147 與標示單字'), '11/19 缺少拼字考');
 
+  const grade1Unit3NovemberChecks = {
+    '2026-11-05': ['Review p.140-141, and preview vocabulary.', 'Unit 3（11/5–12/8）'],
+    '2026-11-06': ['Read the sentences and practice the words on p.142-143.', 'Scholastic online.'],
+    '2026-11-13': ['Review the reading and p.164-165.', 'Reading Homework.', 'Scholastic online.'],
+    '2026-11-17': ['Review p.166.', '明天考試：LA Vocabulary Quiz：P143、P145'],
+    '2026-11-27': ['Review p.200-201 and vocabulary p.173, 175.', 'Reading homework.', 'Scholastic online.']
+  };
+  for (const [date, details] of Object.entries(grade1Unit3NovemberChecks)) {
+    const text = await page.locator(`td[data-date="${date}"][data-who="grade1"]`).innerText();
+    for (const detail of details) assert(text.includes(detail), `弟弟 Unit 3 ${date} 缺少：${detail}`);
+  }
+  assert(await page.locator('td[data-date="2026-11-05"][data-who="grade1"] a[href$="g1-unit3-homework-chart.pdf"]').count() === 1, '弟弟 Unit 3 原始 PDF 連結遺失');
+  assert(!((await page.locator('td[data-date="2026-11-17"][data-who="grade1"]').innerText()).includes('Vocabulary quiz tomorrow')), '11/17 重複顯示考試資訊');
+  const nov30Grade1 = await page.locator('td[data-date="2026-11-30"][data-who="grade1"]').innerText();
+  assert(nov30Grade1.includes('Review p.202.'), '弟弟 11/30 缺少作業');
+  assert(nov30Grade1.includes('明天考試：LA Vocabulary Quiz'), '弟弟 11/30 缺少隔日考試提醒');
+  assert(!nov30Grade1.includes('Vocabulary quiz tomorrow'), '弟弟 11/30 重複顯示考試資訊');
+
   await page.locator('#month-select').selectOption('11');
   for (const [date, detail] of Object.entries({
     '2026-12-01': 'Matter：Unit Review',
@@ -173,6 +191,19 @@ const assert = (condition, message) => {
   const dec4Text = await page.locator('td[data-date="2026-12-04"][data-who="grade2"]').innerText();
   assert(!dec4Text.includes('Review for Unit 3 quiz'), '12/4 重複顯示 Unit 3 考試資訊');
   assert((await page.locator('td[data-date="2026-12-06"][data-who="grade2"]').innerText()).includes('明天考試：LA Unit 3 Quiz'), '12/6 缺少 Unit 3 考試提醒');
+
+  const grade1Unit3DecemberChecks = {
+    '2026-12-01': ['Read p.203-205.', 'LA Vocabulary Quiz'],
+    '2026-12-04': ['Review unit 3.', 'Scholastic online.'],
+    '2026-12-08': ['Preview unit 4 vocabulary.', 'LA Unit 3 Quiz']
+  };
+  for (const [date, details] of Object.entries(grade1Unit3DecemberChecks)) {
+    const text = await page.locator(`td[data-date="${date}"][data-who="grade1"]`).innerText();
+    for (const detail of details) assert(text.includes(detail), `弟弟 Unit 3 ${date} 缺少：${detail}`);
+  }
+  const dec7Grade1 = await page.locator('td[data-date="2026-12-07"][data-who="grade1"]').innerText();
+  assert(dec7Grade1.includes('明天考試：LA Unit 3 Quiz'), '弟弟 12/7 缺少 Unit 3 考試提醒');
+  assert(!dec7Grade1.includes('Review for Unit 3 Quiz tomorrow'), '弟弟 12/7 重複顯示 Unit 3 考試資訊');
 
   await page.locator('#month-select').selectOption('12');
   for (const [date, detail] of Object.entries({

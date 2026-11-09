@@ -970,8 +970,7 @@ window.SCHOOL_DATA = {
       "who": "grade1",
       "subject": "Language Arts",
       "tasks": [
-        "Reread p.106-125.",
-        "Review for vocabulary quiz 2.2 next class."
+        "Reread p.106-125."
       ]
     },
     {
@@ -1062,7 +1061,191 @@ window.SCHOOL_DATA = {
       "who": "grade1",
       "subject": "Language Arts",
       "tasks": [
-        "Review unit 3"
+        "Review p.140-141, and preview vocabulary."
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Read the sentences and practice the words on p.142-143.",
+        "Scholastic online."
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Study the vocabulary on p.144-145."
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "No Homework"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review phonics on p.146-147 and read out loud."
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Read the reading out loud on p.148-163."
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review the reading and p.164-165.",
+        "Reading Homework.",
+        "Scholastic online."
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "No Homework"
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review p.166."
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Preview reading 2"
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Read p.167-169.",
+        "Sign Vocabulary quiz."
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review grammar p.170-171.",
+        "Scholastic online."
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review vocabulary p.172-173."
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review p.174-175, and read the vocabulary sentences."
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review p.176-177 and repeat the phonics out loud."
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Read p.178-199 and review p.173, 175."
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review p.200-201 and vocabulary p.173, 175.",
+        "Reading homework.",
+        "Scholastic online."
+      ]
+    },
+    {
+      "date": "2026-11-30",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review p.202."
+      ]
+    },
+    {
+      "date": "2026-12-01",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Read p.203-205."
+      ]
+    },
+    {
+      "date": "2026-12-02",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Sign vocabulary quiz."
+      ]
+    },
+    {
+      "date": "2026-12-03",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review p.206-207."
+      ]
+    },
+    {
+      "date": "2026-12-04",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Review unit 3.",
+        "Scholastic online."
+      ]
+    },
+    {
+      "date": "2026-12-08",
+      "who": "grade1",
+      "subject": "Language Arts",
+      "tasks": [
+        "Preview unit 4 vocabulary."
       ]
     },
     {
@@ -1107,6 +1290,24 @@ window.SCHOOL_DATA = {
     }
   ],
   "activities": [
+    {
+      "date": "2026-08-31",
+      "who": "grade1",
+      "label": "LA 原始進度表",
+      "text": "Unit 1（8/31–10/1）｜<a href=\"assets/sources/2026-11/g1-unit1-homework-chart.pdf\" target=\"_blank\" rel=\"noopener\">查看原始 PDF</a>"
+    },
+    {
+      "date": "2026-10-02",
+      "who": "grade1",
+      "label": "LA 原始進度表",
+      "text": "Unit 2（10/2–11/5）｜<a href=\"assets/sources/2026-11/g1-unit2-homework-chart.pdf\" target=\"_blank\" rel=\"noopener\">查看原始 PDF</a>"
+    },
+    {
+      "date": "2026-11-05",
+      "who": "grade1",
+      "label": "LA 原始進度表",
+      "text": "Unit 3（11/5–12/8）｜<a href=\"assets/sources/2026-11/g1-unit3-homework-chart.pdf\" target=\"_blank\" rel=\"noopener\">查看原始 PDF</a>"
+    },
     {
       "date": "2026-11-06",
       "who": "grade2",
@@ -1235,6 +1436,31 @@ window.SCHOOL_DATA = {
       "2026-10-01",
       "grade1",
       "LA Unit 1 Quiz"
+    ],
+    [
+      "2026-10-12",
+      "grade1",
+      "LA Vocabulary Quiz 2.1"
+    ],
+    [
+      "2026-10-22",
+      "grade1",
+      "LA Vocabulary Quiz 2.2"
+    ],
+    [
+      "2026-11-18",
+      "grade1",
+      "LA Vocabulary Quiz：P143、P145"
+    ],
+    [
+      "2026-12-01",
+      "grade1",
+      "LA Vocabulary Quiz"
+    ],
+    [
+      "2026-12-08",
+      "grade1",
+      "LA Unit 3 Quiz"
     ],
     [
       "2026-09-14",
