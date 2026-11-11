@@ -243,6 +243,24 @@ const assert = (condition, message) => {
   await page.setViewportSize({ width: 390, height: 844 });
   assert(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)), '書香獎專區在手機上發生頁面水平溢位');
 
+  await page.locator('[data-act="learning"]').click();
+  const learning = page.locator('.learning');
+  await learning.waitFor({ state: 'visible' });
+  const learningLinks = [
+    ['ICRT News for Kids', 'https://www.icrt.com.tw/news_lunchbox.php?&mlevel1=7'],
+    ['國語生字練習', 'https://leyleyaiink.github.io/kids-chinese/?v'],
+    ['空中英語教室', 'https://coocplus.tp.edu.tw/learning/dist/#/course/zGl3Gxld'],
+    ['大家說英語', 'https://coocplus.tp.edu.tw/learning/dist/#/course/ykXDEaK8']
+  ];
+  for (const [title, url] of learningLinks) {
+    const link = learning.locator('a').filter({ hasText: title });
+    assert(await link.count() === 1, `學習專區缺少：${title}`);
+    assert(await link.getAttribute('href') === url, `${title} 連結不正確`);
+    assert(await link.getAttribute('target') === '_blank', `${title} 應在新分頁開啟`);
+    assert((await link.getAttribute('rel') || '').includes('noopener'), `${title} 缺少安全連結屬性`);
+  }
+  assert(!(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)), '學習專區在手機上發生頁面水平溢位');
+
   await page.locator('[data-act="accounts"]').click();
   await page.locator('#account-password').fill('19850515');
   await page.locator('[data-act="unlock"]').click();
