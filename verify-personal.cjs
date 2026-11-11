@@ -249,6 +249,7 @@ const assert = (condition, message) => {
   const learningLinks = [
     ['ICRT News for Kids', 'https://www.icrt.com.tw/news_lunchbox.php?&mlevel1=7'],
     ['國語生字練習', 'https://leyleyaiink.github.io/kids-chinese/?v'],
+    ['注音小達人', 'https://jinshuanyu.github.io/bopomofo-game/'],
     ['空中英語教室', 'https://coocplus.tp.edu.tw/learning/dist/#/course/zGl3Gxld'],
     ['大家說英語', 'https://coocplus.tp.edu.tw/learning/dist/#/course/ykXDEaK8']
   ];
