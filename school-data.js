@@ -1488,6 +1488,16 @@ window.SCHOOL_DATA = {
       "LA Spelling Quiz：TB P107、P109 與標示單字"
     ],
     [
+      "2026-11-16",
+      "grade2",
+      "數學 U6"
+    ],
+    [
+      "2026-11-19",
+      "grade2",
+      "國語 L7"
+    ],
+    [
       "2026-11-19",
       "grade2",
       "LA Spelling Quiz：TB P145、P147 與標示單字"

@@ -145,8 +145,14 @@ const assert = (condition, message) => {
   assert(await page.locator('td[data-date="2026-11-06"][data-who="grade2"] a[href*="1MCNr55F7JZ-GenqHUaIojEHScn3D6CSP"]').count() === 1, '哥哥 Unit 3 原始 PDF 連結遺失');
   const nov18Text = await page.locator('td[data-date="2026-11-18"][data-who="grade2"]').innerText();
   assert(nov18Text.includes('明天考試：LA Spelling Quiz：TB P145、P147 與標示單字'), '11/18 缺少隔日拼字考提醒');
+  assert(nov18Text.includes('明天考試：國語 L7'), '11/18 缺少隔日國語 L7 考試提醒');
   assert(!nov18Text.includes('Review for spelling quiz'), '11/18 重複顯示拼字考資訊');
-  assert((await page.locator('td[data-date="2026-11-19"][data-who="grade2"]').innerText()).includes('LA Spelling Quiz：TB P145、P147 與標示單字'), '11/19 缺少拼字考');
+  const nov19Grade2 = await page.locator('td[data-date="2026-11-19"][data-who="grade2"]').innerText();
+  assert(nov19Grade2.includes('LA Spelling Quiz：TB P145、P147 與標示單字'), '11/19 缺少拼字考');
+  assert(nov19Grade2.includes('國語 L7'), '11/19 缺少國語 L7 考試');
+  const nov15Grade2 = await page.locator('td[data-date="2026-11-15"][data-who="grade2"]').innerText();
+  assert(nov15Grade2.includes('明天考試：數學 U6'), '11/15 缺少隔日數學 U6 考試提醒');
+  assert((await page.locator('td[data-date="2026-11-16"][data-who="grade2"]').innerText()).includes('數學 U6'), '11/16 缺少數學 U6 考試');
 
   const grade1Unit3NovemberChecks = {
     '2026-11-05': ['Review p.140-141, and preview vocabulary.', 'Unit 3（11/5–12/8）'],
